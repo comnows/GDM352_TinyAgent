@@ -8,12 +8,12 @@ using UnityEngine.Analytics;
 public class UIController : MonoBehaviour
 {
     public GameObject RevivePanel;
-    public GameObject joystick;
+    public GameObject ControllerPanel;
     private int currentScene;
     
     public void EndGame()
     {
-        joystick.SetActive(false);
+        ControllerPanel.SetActive(false);
         RevivePanel.SetActive(true);
     }
 
@@ -22,7 +22,7 @@ public class UIController : MonoBehaviour
         RevivePanel.SetActive(false);
         CountdownTimer countdownTimer = RevivePanel.GetComponent<CountdownTimer>();
         countdownTimer.currentTime = countdownTimer.startingTime;
-        joystick.SetActive(true);
+        ControllerPanel.SetActive(true);
     }
 
     public void Skip()

@@ -6,13 +6,16 @@ public class SwitchStateCW : MonoBehaviour
 {
     public ConveyorBelt conveyorBelt;
     PlayerControls playerControls;
+    Animator animator;
     bool interactPressed;
     bool interactReleased;
 
     bool isPlayer = false;
+    bool isLeft = false;
 
     private void Awake() 
     {
+        animator = GetComponent<Animator>();
         playerControls = new PlayerControls();
         playerControls.PlayerControl.Interact.performed += ctx => interactPressed = true;
         playerControls.PlayerControl.Interact.performed += ctx => interactReleased = true;
@@ -51,6 +54,8 @@ public class SwitchStateCW : MonoBehaviour
             if(interactPressed)
             {
                 conveyorBelt.ToggleState();
+                isLeft = !isLeft;
+                animator.SetBool("IsLeft", isLeft);
             }
         }
             

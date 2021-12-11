@@ -9,8 +9,13 @@ public class FireBarrel : MonoBehaviour
     {
         if(other.CompareTag("Bullet"))
         {
-            Instantiate(FireSprayPref, transform.position, Quaternion.identity);
-            Destroy(gameObject);
+            explode();
         }
+    }
+
+    public void explode()
+    {
+        Instantiate(FireSprayPref, transform.position, Quaternion.identity);
+        Destroy(gameObject);
     }
 }

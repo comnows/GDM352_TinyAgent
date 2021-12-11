@@ -18,7 +18,8 @@ public class GrenadeThrow : MonoBehaviour
     private float endTime;
     private float endIntervalTime;
     public Vector2 direction;
-    public float intervalTime;
+    //public float intervalTime;
+    private float directionThreshold = 0.9f;
 
     public GameObject grenade;
     public Transform ThrowPoint;
@@ -60,16 +61,20 @@ public class GrenadeThrow : MonoBehaviour
         Debug.Log("total time = " + totalTime);
         if(distance >= minDistance && totalTime <= maxTime)
         {
-            direction = startPosition - endPosition;
-            intervalTime = endIntervalTime - startIntervalTime;
+            Vector3 direction3D = endPosition - startPosition;
+            direction = new Vector2(direction3D.x, direction3D.y).normalized;
+            //intervalTime = endIntervalTime - startIntervalTime;
             Debug.Log("Swipe Detection");
             Debug.DrawLine(startPosition, endPosition, Color.red, 5f);
-            ThrowGrenade();
+            if(Vector2.Dot(Vector2.right, direction) > directionThreshold)
+            {
+                ThrowGrenade();
+            }
         }
     }
 
     private void ThrowGrenade()
     {
-        Instantiate(grenade, ThrowPoint.position, Quaternion.identity);
+        Instantiate(grenade, ThrowPoint.position, ThrowPoint.rotation);
     }
 }

@@ -21,9 +21,11 @@ public class Bullet : MonoBehaviour
             enemy.takeDamage(damage);
         }
 
-        if(!hitInfo.CompareTag("Ladder"))
+        Destroy(gameObject);
+
+        /*if(!hitInfo.CompareTag("Ladder"))
         {
             Destroy(gameObject);
-        }
+        }*/
     }
 }
