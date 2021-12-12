@@ -9,6 +9,7 @@ public class UIController : MonoBehaviour
 {
     public GameObject RevivePanel;
     public GameObject ControllerPanel;
+    public GameObject TutorialPanel;
     private int currentScene;
     
     public void EndGame()
@@ -35,5 +36,11 @@ public class UIController : MonoBehaviour
         Debug.Log("RestartDic" + RestartDic);
         currentScene = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentScene);
+    }
+
+    public void Back()
+    {
+        ControllerPanel.SetActive(true);
+        TutorialPanel.SetActive(false);
     }
 }

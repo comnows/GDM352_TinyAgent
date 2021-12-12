@@ -11,6 +11,7 @@ public class GrenadeThrow : MonoBehaviour
 
     private InputManager inputManager;
 
+    private float screenWidth;
     private Vector2 startPosition;
     private float startTime;
     private float startIntervalTime;
@@ -20,6 +21,7 @@ public class GrenadeThrow : MonoBehaviour
     public Vector2 direction;
     //public float intervalTime;
     private float directionThreshold = 0.9f;
+    Vector2 StartScreenPosition;
 
     public GameObject grenade;
     public Transform ThrowPoint;
@@ -27,6 +29,11 @@ public class GrenadeThrow : MonoBehaviour
     private void Awake()
     {
         inputManager = InputManager.Instance;
+    }
+
+    private void Start() 
+    {
+        screenWidth = Screen.width;
     }
 
     private void OnEnable()
@@ -44,6 +51,9 @@ public class GrenadeThrow : MonoBehaviour
     private void SwipeStart(Vector2 position, float time)
     {
         startPosition = position; startTime = time; startIntervalTime = Time.time;
+        StartScreenPosition = Camera.main.WorldToScreenPoint(position);
+        Debug.Log("Screen Position = " + StartScreenPosition);
+        Debug.Log("Start Position = " + startPosition);
         Debug.Log("start time = " + time);
     }
 
@@ -66,7 +76,7 @@ public class GrenadeThrow : MonoBehaviour
             //intervalTime = endIntervalTime - startIntervalTime;
             Debug.Log("Swipe Detection");
             Debug.DrawLine(startPosition, endPosition, Color.red, 5f);
-            if(Vector2.Dot(Vector2.right, direction) > directionThreshold)
+            if(Vector2.Dot(Vector2.right, direction) > directionThreshold && StartScreenPosition.x > screenWidth/2)
             {
                 ThrowGrenade();
             }
