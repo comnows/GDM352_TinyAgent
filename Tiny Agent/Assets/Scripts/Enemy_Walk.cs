@@ -25,8 +25,9 @@ public class Enemy_Walk : StateMachineBehaviour
        enemy.LookAtPlayer();
 
        Vector2 target = new Vector2(player.position.x, rb.position.y);
-       Vector2 newPos = Vector2.MoveTowards(rb.position, target, movespeed * Time.fixedDeltaTime);
-       rb.MovePosition(newPos);
+       rb.position = Vector2.MoveTowards(animator.transform.position, target, movespeed * Time.fixedDeltaTime);
+       //Vector2 newPos = Vector2.MoveTowards(rb.position, target, movespeed * Time.fixedDeltaTime);
+       //rb.MovePosition(newPos);
 
        if(Vector2.Distance(player.position, rb.position) <= attackRange)
        {
