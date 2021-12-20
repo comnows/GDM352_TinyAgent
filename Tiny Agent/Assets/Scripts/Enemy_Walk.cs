@@ -34,7 +34,7 @@ public class Enemy_Walk : StateMachineBehaviour
            animator.SetTrigger("Attack");
        }
 
-       if(Vector2.Distance(player.position, rb.position) > sawRange)
+       if(Vector2.Distance(player.position, rb.position) > sawRange || player.GetComponent<PlayerController>().health <= 0)
        {
           animator.SetBool("PlayerFounded", false);
        }

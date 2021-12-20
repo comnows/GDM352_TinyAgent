@@ -222,7 +222,7 @@ public class PlayerController : MonoBehaviour
             Debug.Log("DieDic" + DieDictionary);
             UIController uIController = FindObjectOfType<UIController>();
             uIController.EndGame();
-            gameObject.SetActive(false);
+            //gameObject.SetActive(false);
         }
     }
 

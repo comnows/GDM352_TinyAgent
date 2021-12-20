@@ -43,6 +43,6 @@ public class PlayerFiring : MonoBehaviour
     void Shoot()
     {
         Instantiate(BulletPrefab, FirePoint.position, FirePoint.rotation);
-        //SoundController.soundInstance.PlaySoundEffect(0);
+        SoundController.soundInstance.PlaySoundEffect(0);
     }
 }

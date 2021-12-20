@@ -75,10 +75,10 @@ public class RewardAdsScript : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsSh
         {
             Debug.Log("Unity Ads Rewarded Ad Completed");
             // Grant a reward.
-            Player.transform.position = SpawnPoint.position;
+            Player.transform.position = new Vector3(SpawnPoint.position.x, SpawnPoint.position.y);
             PlayerController playerController = Player.GetComponent<PlayerController>();
-            playerController.health = 100;
-            Player.SetActive(true);
+            playerController.health = 1;
+            //Player.SetActive(true);
 
             UIController uIController = FindObjectOfType<UIController>();
             uIController.Revive();

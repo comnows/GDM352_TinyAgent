@@ -14,7 +14,7 @@ public class UIController : MonoBehaviour
     
     public void EndGame()
     {
-        ControllerPanel.SetActive(false);
+        //ControllerPanel.SetActive(false);
         RevivePanel.SetActive(true);
     }
 
@@ -23,7 +23,7 @@ public class UIController : MonoBehaviour
         RevivePanel.SetActive(false);
         CountdownTimer countdownTimer = RevivePanel.GetComponent<CountdownTimer>();
         countdownTimer.currentTime = countdownTimer.startingTime;
-        ControllerPanel.SetActive(true);
+        //ControllerPanel.SetActive(true);
     }
 
     public void Skip()
@@ -34,13 +34,13 @@ public class UIController : MonoBehaviour
             {"Restart", 1}
         });
         Debug.Log("RestartDic" + RestartDic);
-        currentScene = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(currentScene);
+        //currentScene = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene("SampleScene");
     }
 
     public void Back()
     {
-        ControllerPanel.SetActive(true);
+        //ControllerPanel.SetActive(true);
         TutorialPanel.SetActive(false);
     }
 }

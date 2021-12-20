@@ -871,6 +871,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Middle Belt (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7028225602641168392, guid: 6b26e04c427541f48bc599048a2814d6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7028225602641168394, guid: 6b26e04c427541f48bc599048a2814d6, type: 3}
       propertyPath: m_SortingLayer
       value: -2
@@ -3113,7 +3117,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.5300004, y: 0.17599988, z: -10}
+  m_LocalPosition: {x: -1.5300009, y: 0.17599988, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3601,6 +3605,10 @@ PrefabInstance:
     - target: {fileID: 7028225602641168392, guid: 6b26e04c427541f48bc599048a2814d6, type: 3}
       propertyPath: m_Name
       value: Middle Belt (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7028225602641168392, guid: 6b26e04c427541f48bc599048a2814d6, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7028225602641168394, guid: 6b26e04c427541f48bc599048a2814d6, type: 3}
       propertyPath: m_SortingLayer
@@ -4569,7 +4577,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 688285676}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.5300004, y: 0.17599988, z: -10}
+  m_LocalPosition: {x: -1.5300009, y: 0.17599988, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 11484766}
@@ -6071,6 +6079,10 @@ PrefabInstance:
     - target: {fileID: 7028225602641168392, guid: 6b26e04c427541f48bc599048a2814d6, type: 3}
       propertyPath: m_Name
       value: Middle Belt (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7028225602641168392, guid: 6b26e04c427541f48bc599048a2814d6, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7028225602641168394, guid: 6b26e04c427541f48bc599048a2814d6, type: 3}
       propertyPath: m_SortingLayer
@@ -7635,6 +7647,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Middle Belt (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7028225602641168392, guid: 6b26e04c427541f48bc599048a2814d6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7028225602641168394, guid: 6b26e04c427541f48bc599048a2814d6, type: 3}
       propertyPath: m_SortingLayer
       value: -2
@@ -8021,7 +8037,7 @@ GameObject:
   - component: {fileID: 1377646202}
   - component: {fileID: 1377646204}
   - component: {fileID: 1377646203}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Belt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9496,6 +9512,10 @@ PrefabInstance:
     - target: {fileID: 7028225602641168392, guid: 6b26e04c427541f48bc599048a2814d6, type: 3}
       propertyPath: m_Name
       value: Middle Belt (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7028225602641168392, guid: 6b26e04c427541f48bc599048a2814d6, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7028225602641168394, guid: 6b26e04c427541f48bc599048a2814d6, type: 3}
       propertyPath: m_SortingLayer
@@ -14181,6 +14201,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Middle Belt (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7028225602641168392, guid: 6b26e04c427541f48bc599048a2814d6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7028225602641168394, guid: 6b26e04c427541f48bc599048a2814d6, type: 3}
       propertyPath: m_SortingLayer
       value: -2
@@ -14538,7 +14562,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1824735857
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14623,6 +14647,10 @@ PrefabInstance:
     - target: {fileID: 7028225602641168392, guid: 6b26e04c427541f48bc599048a2814d6, type: 3}
       propertyPath: m_Name
       value: Middle Belt (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7028225602641168392, guid: 6b26e04c427541f48bc599048a2814d6, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7028225602641168394, guid: 6b26e04c427541f48bc599048a2814d6, type: 3}
       propertyPath: m_SortingLayer
@@ -14923,7 +14951,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _androidGameId: 4478388
   _iOsGameId: 4478389
-  _testMode: 1
+  _testMode: 0
   _enablePerPlacementMode: 1
 --- !u!114 &1873546661
 MonoBehaviour:
@@ -17235,6 +17263,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Left Belt
       objectReference: {fileID: 0}
+    - target: {fileID: 4009298606779361737, guid: c975062f984ba05499884d248d14d1f7, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4009298606779361742, guid: c975062f984ba05499884d248d14d1f7, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -17423,6 +17455,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Right Belt
       objectReference: {fileID: 0}
+    - target: {fileID: 5731474854030055616, guid: 11b12895402072848839c1e9e2980282, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5731474854030055621, guid: 11b12895402072848839c1e9e2980282, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -17492,6 +17528,10 @@ PrefabInstance:
     - target: {fileID: 7028225602641168392, guid: 6b26e04c427541f48bc599048a2814d6, type: 3}
       propertyPath: m_Name
       value: Middle Belt
+      objectReference: {fileID: 0}
+    - target: {fileID: 7028225602641168392, guid: 6b26e04c427541f48bc599048a2814d6, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7028225602641168394, guid: 6b26e04c427541f48bc599048a2814d6, type: 3}
       propertyPath: m_SortingLayer
